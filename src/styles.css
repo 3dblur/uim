@@ -220,7 +220,7 @@ body {
 .landing-title {
   font-size: 64px;
   font-weight:620;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   letter-spacing: -0.5px;
   color:#33404e;
 }
@@ -230,9 +230,9 @@ body {
   font-size: 18px;
   font-weight: 300;
   color: var(--text-secondary);
-  margin-bottom: 45px;
+  margin-bottom: 48px;
   line-height: 1.6;
-  color: #919191;
+  color: #b9b8b8;
 }
 
 .landing-buttons {
