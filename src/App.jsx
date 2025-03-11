@@ -8,6 +8,7 @@ import ScrollIndicator from './components/Layout/ScrollIndicator';
 import Button from './components/UI/Button';
 import useScrollSpy from './hooks/useScrollSpy';
 
+
 const App = () => {
   const scrollContainerRef = useRef(null);
   const sections = ['landing', 'explore', 'featured', 'detail'];

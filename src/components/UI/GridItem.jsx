@@ -14,10 +14,11 @@ const GridItem = ({
       <div className="grid-item-content">
         <h3 className="grid-item-title">{title}</h3>
         <p className="grid-item-subtitle">{subtitle}</p>
+
         <div className="grid-item-image">
           <img 
-            src={`/api/placeholder/${featured ? '300/140' : '200/100'}`} 
-            alt={`${title} UI Preview`} 
+            //src={``} 
+          //  alt={`${title} UI Preview`} 
           />
         </div>
         {description && <p>{description}</p>}

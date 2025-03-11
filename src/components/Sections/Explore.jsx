@@ -1,27 +1,34 @@
-import React from 'react';
+// src/components/Sections/Explore.jsx
+import React, { useState } from 'react';
 import OrbitItem from '../UI/OrbitItem';
 
 const Explore = () => {
+  const [active, setActive] = useState(null);
+
   const categories = [
-    { id: 'dashboards', label: 'Dashboards', position: 'top' },
-    { id: 'mobile', label: 'Mobile Apps', position: 'right' },
-    { id: 'ecommerce', label: 'E-commerce', position: 'bottom' },
-    { id: 'components', label: 'Component Kits', position: 'left' }
+    { id: 'DeFi', label: 'DeFi', position: 'top' },
+    { id: 'AI', label: 'AI', position: 'right' },
+    { id: 'SocialFi', label: 'SocialFi', position: 'bottom' },
+    { id: 'GameFi', label: 'GameFi', position: 'left' }
   ];
 
   return (
     <section id="explore" className="section explore">
       <div className="orbit-container">
-        <div className="core">
-          <div className="core-text">Explore UI Categories</div>
+        <div className={`core ${active ? 'active' : ''}`}>
+          <div className="core-text">
+            {active ? active : 'Explore'}
+          </div>
         </div>
         <div className="orbit"></div>
         {categories.map((category) => (
           <OrbitItem 
             key={category.id}
-            icon={category.id}
             label={category.label}
             position={category.position}
+            active={active === category.label}
+            onHover={() => setActive(category.label)}
+            onLeave={() => setActive(null)}
           />
         ))}
       </div>

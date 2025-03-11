@@ -1,6 +1,6 @@
 import React from 'react';
 
-const OrbitItem = ({ icon, label, position }) => {
+const OrbitItem = ({ icon, label, position, active, onHover, onLeave }) => {
   // Calculate CSS variables for positioning
   const getPositionStyle = () => {
     switch (position) {
@@ -18,10 +18,15 @@ const OrbitItem = ({ icon, label, position }) => {
   };
 
   return (
-    <div className="orbit-item" style={getPositionStyle()}>
-      <img src={`/api/placeholder/48/48`} alt={label} />
-      <span>{label}</span>
-    </div>
+    <div 
+    className={`orbit-item ${position} ${active ? 'active' : ''}`}
+    onMouseEnter={onHover}
+    onMouseLeave={onLeave}
+  >
+    <span className="orbit-item-label">{label}</span>
+  </div>
+    
+    
   );
 };
 

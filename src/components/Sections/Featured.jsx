@@ -5,7 +5,7 @@ const Featured = () => {
   const items = [
     {
       id: 1,
-      title: 'Enterprise Dashboard Suite',
+      title: 'Dex',
       subtitle: 'by Grayscale Studio',
       price: 79,
       tags: ['React', 'AI-Enhanced'],
@@ -14,38 +14,38 @@ const Featured = () => {
     },
     {
       id: 2,
-      title: 'Minimal Analytics',
+      title: 'Minimal Social-fi App',
       subtitle: 'by UI Engineers',
       price: 49,
-      tags: ['Vue']
+      tags: ['React', 'AI-Enhanced']
     },
     {
       id: 3,
-      title: 'E-commerce Kit',
+      title: 'DeFAi',
       subtitle: 'by Gray Matter',
       price: 59,
       tags: ['React']
     },
     {
       id: 4,
-      title: 'Finance App UI',
+      title: 'Opinion Trading Market',
       subtitle: 'by Mono Studio',
       price: 39,
       tags: ['Figma']
     },
     {
       id: 5,
-      title: 'Portfolio Template',
+      title: 'Yield Farming Protocol',
       subtitle: 'by DesignAI',
       price: 29,
-      tags: ['HTML/CSS']
+      tags: [ 'AI-Enhanced']
     },
     {
       id: 6,
-      title: 'Task Manager',
+      title: 'Memecoin Analytics ios',
       subtitle: 'by UX Craft',
       price: 45,
-      tags: ['Angular']
+      tags: ['React', 'AI-Enhanced']
     }
   ];
 
